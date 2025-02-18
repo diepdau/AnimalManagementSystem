@@ -15,6 +15,10 @@
       "RelativeMoniker": "D:0:0:{922662C1-365A-4E42-8390-F67F3B43D174}|ZooAnimalManagementSystem.csproj|solutionrelative:eventanimal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{922662C1-365A-4E42-8390-F67F3B43D174}|ZooAnimalManagementSystem.csproj|d:\\animalmanagementsystem\\zooanimalmanagementsystem\\monkey.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{922662C1-365A-4E42-8390-F67F3B43D174}|ZooAnimalManagementSystem.csproj|solutionrelative:monkey.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{922662C1-365A-4E42-8390-F67F3B43D174}|ZooAnimalManagementSystem.csproj|d:\\animalmanagementsystem\\zooanimalmanagementsystem\\animal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{922662C1-365A-4E42-8390-F67F3B43D174}|ZooAnimalManagementSystem.csproj|solutionrelative:animal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -55,16 +59,16 @@
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\AnimalManagementSystem\\ZooAnimalManagementSystem\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "D:\\AnimalManagementSystem\\ZooAnimalManagementSystem\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAADsAAAAAAAAAAAAkwEkAAABCAAAAAAAAAA==",
+              "ToolTip": "D:\\AnimalManagementSystem\\ZooAnimalManagementSystem\\Program.cs*",
+              "RelativeToolTip": "Program.cs*",
+              "ViewState": "AgIAADsAAAAAAAAAAAAkwBkAAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-18T09:20:55.873Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "Animal.cs",
               "DocumentMoniker": "D:\\AnimalManagementSystem\\ZooAnimalManagementSystem\\Animal.cs",
               "RelativeDocumentMoniker": "Animal.cs",
@@ -77,7 +81,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "ICarnivore.cs",
               "DocumentMoniker": "D:\\AnimalManagementSystem\\ZooAnimalManagementSystem\\ICarnivore.cs",
               "RelativeDocumentMoniker": "ICarnivore.cs",
@@ -90,7 +94,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "Elephant.cs",
               "DocumentMoniker": "D:\\AnimalManagementSystem\\ZooAnimalManagementSystem\\Elephant.cs",
               "RelativeDocumentMoniker": "Elephant.cs",
@@ -112,6 +116,40 @@
               "ViewState": "AgIAAAMAAAAAAAAAAAAAABwAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-18T07:34:27.264Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "FloatingWindowState": {
+        "Id": "24d53624-ff69-4007-81d6-b03d16c44972",
+        "Display": 0,
+        "X": 887,
+        "Y": 97,
+        "Width": 1640,
+        "Height": 792,
+        "WindowState": 0
+      },
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Monkey.cs",
+              "DocumentMoniker": "D:\\AnimalManagementSystem\\ZooAnimalManagementSystem\\Monkey.cs",
+              "RelativeDocumentMoniker": "Monkey.cs",
+              "ToolTip": "D:\\AnimalManagementSystem\\ZooAnimalManagementSystem\\Monkey.cs",
+              "RelativeToolTip": "Monkey.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-18T07:29:50.456Z",
               "EditorCaption": ""
             }
           ]
