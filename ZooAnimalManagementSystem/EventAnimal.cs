@@ -17,7 +17,6 @@ namespace ZooAnimalManagementSystem
             Name = name;
             Age = age;
             Species = species;
-
         }
 
     }
