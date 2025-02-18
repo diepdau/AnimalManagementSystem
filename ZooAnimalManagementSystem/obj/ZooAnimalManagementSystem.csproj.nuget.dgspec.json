@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\New folder\\ZooAnimalManagementSystem\\ZooAnimalManagementSystem.csproj": {}
+    "D:\\AnimalManagementSystem\\ZooAnimalManagementSystem\\ZooAnimalManagementSystem.csproj": {}
   },
   "projects": {
-    "D:\\New folder\\ZooAnimalManagementSystem\\ZooAnimalManagementSystem.csproj": {
+    "D:\\AnimalManagementSystem\\ZooAnimalManagementSystem\\ZooAnimalManagementSystem.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\New folder\\ZooAnimalManagementSystem\\ZooAnimalManagementSystem.csproj",
+        "projectUniqueName": "D:\\AnimalManagementSystem\\ZooAnimalManagementSystem\\ZooAnimalManagementSystem.csproj",
         "projectName": "ZooAnimalManagementSystem",
-        "projectPath": "D:\\New folder\\ZooAnimalManagementSystem\\ZooAnimalManagementSystem.csproj",
+        "projectPath": "D:\\AnimalManagementSystem\\ZooAnimalManagementSystem\\ZooAnimalManagementSystem.csproj",
         "packagesPath": "C:\\Users\\DL\\.nuget\\packages\\",
-        "outputPath": "D:\\New folder\\ZooAnimalManagementSystem\\obj\\",
+        "outputPath": "D:\\AnimalManagementSystem\\ZooAnimalManagementSystem\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
