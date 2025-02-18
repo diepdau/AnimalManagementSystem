@@ -1,0 +1,15 @@
+D:\ZooAnimalManagementSystem\bin\Debug\net8.0\ZooAnimalManagementSystem.exe
+D:\ZooAnimalManagementSystem\bin\Debug\net8.0\ZooAnimalManagementSystem.deps.json
+D:\ZooAnimalManagementSystem\bin\Debug\net8.0\ZooAnimalManagementSystem.runtimeconfig.json
+D:\ZooAnimalManagementSystem\bin\Debug\net8.0\ZooAnimalManagementSystem.dll
+D:\ZooAnimalManagementSystem\bin\Debug\net8.0\ZooAnimalManagementSystem.pdb
+D:\ZooAnimalManagementSystem\obj\Debug\net8.0\ZooAnimalManagementSystem.GeneratedMSBuildEditorConfig.editorconfig
+D:\ZooAnimalManagementSystem\obj\Debug\net8.0\ZooAnimalManagementSystem.AssemblyInfoInputs.cache
+D:\ZooAnimalManagementSystem\obj\Debug\net8.0\ZooAnimalManagementSystem.AssemblyInfo.cs
+D:\ZooAnimalManagementSystem\obj\Debug\net8.0\ZooAnimalManagementSystem.csproj.CoreCompileInputs.cache
+D:\ZooAnimalManagementSystem\obj\Debug\net8.0\ZooAnimalManagementSystem.dll
+D:\ZooAnimalManagementSystem\obj\Debug\net8.0\refint\ZooAnimalManagementSystem.dll
+D:\ZooAnimalManagementSystem\obj\Debug\net8.0\ZooAnimalManagementSystem.pdb
+D:\ZooAnimalManagementSystem\obj\Debug\net8.0\ZooAnimalManagementSystem.genruntimeconfig.cache
+D:\ZooAnimalManagementSystem\obj\Debug\net8.0\ref\ZooAnimalManagementSystem.dll
+D:\ZooAnimalManagementSystem\obj\Debug\net8.0\ZooAnimalManagementSystem.sourcelink.json
