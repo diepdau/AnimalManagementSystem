@@ -20,13 +20,37 @@ namespace ZooAnimalManagementSystem
         }
         public List<Animal> GetAnimals() => animals;
 
-        public async void SaveAnimalData(string nameFile)
+        public List<Animal> FilterByAgeGreaterThan(int age)
         {
-            Console.WriteLine("Loading data from a file.");
+            return animals.Where(a => a.Age > age).ToList();
+        }
+
+        public List<Animal> FilterBySpecies(string species)
+        {
+            return animals.Where(a => a.Species == species).ToList();
+        }
+
+        public async Task SaveAnimalData(string nameFile)
+        {
+            Console.WriteLine("\nSaving data to file");
             string json = JsonSerializer.Serialize(animals, new JsonSerializerOptions { WriteIndented = true });
             await File.WriteAllTextAsync(nameFile, json);
         }
-        
+
+        public async Task LoadAnimalData(string nameFile)
+        {
+            if (File.Exists(nameFile))
+            {
+                Console.WriteLine("\nLoading data from a file");
+                string json = await File.ReadAllTextAsync(nameFile);
+                animals = JsonSerializer.Deserialize<List<Animal>>(json) ?? new List<Animal>();
+            }
+            else
+            {
+                Console.WriteLine("File not found");
+            }
+        }
+
     }
 
 }
