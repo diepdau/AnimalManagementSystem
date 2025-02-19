@@ -4,6 +4,7 @@ using System.Linq;
 using System.Runtime.CompilerServices;
 using System.Text;
 using System.Text.Json;
+using System.Text.Json.Serialization;
 using System.Threading.Tasks;
 
 namespace ZooAnimalManagementSystem
@@ -13,6 +14,7 @@ namespace ZooAnimalManagementSystem
         public string Name { get; set; }
         public int Age { get; set; }
         public string Species { get; set; }
+
 
         public Animal(string name, int age, string species)
         {

@@ -6,6 +6,7 @@ using System.Text.Json;
 using System.Threading.Tasks;
 using System.Text.Json.Serialization;
 using System.Xml;
+using System.IO;
 namespace ZooAnimalManagementSystem
 {
      class Zoo
@@ -37,21 +38,41 @@ namespace ZooAnimalManagementSystem
             await File.WriteAllTextAsync(nameFile, json);
         }
 
-        public async Task LoadAnimalData(string nameFile)
+        public static async Task LoadAnimalData(string nameFile)
         {
-            if (File.Exists(nameFile))
-            {
-                Console.WriteLine("\nLoading data from a file");
-                string json = await File.ReadAllTextAsync(nameFile);
-                animals = JsonSerializer.Deserialize<List<Animal>>(json) ?? new List<Animal>();
-            }
-            else
-            {
-                Console.WriteLine("File not found");
-            }
-        }
+            Console.WriteLine("\nLoading data from a file");
 
+            string json = await File.ReadAllTextAsync(nameFile);
+            using JsonDocument doc = JsonDocument.Parse(json);
+            JsonElement root = doc.RootElement;
+
+            if (root.ValueKind == JsonValueKind.Array)
+            {
+                List<Animal> animals = new List<Animal>();
+
+                foreach (JsonElement element in root.EnumerateArray())
+                {
+                    string name = element.GetProperty("Name").GetString()!;
+                    int age = element.GetProperty("Age").GetInt32();
+                    string species = element.GetProperty("Species").GetString()!;
+
+                    Animal animal = name switch
+                    {
+                        "Lion" => new Lion(name, age, species),
+                        "Monkey" => new Monkey(name, age, species),
+                        "Elephant" => new Elephant(name, age, species),
+                        _ => null
+                    };
+
+                    animals.Add(animal);
+                    Console.WriteLine($"Loaded: {animal.Name}, Age: {animal.Age}, Species: {animal.Species}");
+                }
+            }
     }
+
+
+
+}
 
 }
 

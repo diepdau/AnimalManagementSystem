@@ -26,7 +26,7 @@ namespace MyApplication
             myZoo.AddAnimal(new Monkey("Monkey", 14, "Animal"));
 
             //age greater than
-            Console.WriteLine("\nAge < 12");
+            Console.WriteLine("\nAge > 12");
             var kq = myZoo.FilterByAgeGreaterThan(12);
             foreach (var i in kq)
             {
@@ -45,25 +45,18 @@ namespace MyApplication
 
             string fileName = @"D:\animals.json"; ;
 
-            await myZoo.LoadAnimalData(fileName);
-
-            myZoo.OnAnimalAdded += (sender, animal) =>
-                Console.WriteLine($"New Animal : {animal.Name}, Age: {animal.Age}, Species: {animal.Species}");
-            myZoo.AddAnimal(new Lion("Lion", 12, "Animal12"));
-            myZoo.AddAnimal(new Elephant("Elephant", 13, "Animal"));
-            myZoo.AddAnimal(new Monkey("Monkey", 14, "Animal"));
+            //myZoo.OnAnimalAdded += (sender, animal) =>
+            //    Console.WriteLine($"New Animal : {animal.Name}, Age: {animal.Age}, Species: {animal.Species}");
 
             // Save to file
             await myZoo.SaveAnimalData(fileName);
 
             // Loading
-            Console.WriteLine("Read animals:");
-            foreach (var animal in myZoo.GetAnimals())
-            {
-                Console.WriteLine($"Name: {animal.Name}, Age:{animal.Age}, Species: {animal.Species}");
-            }
+            Console.WriteLine("\nRead animals:");
+            await Zoo.LoadAnimalData(fileName);
 
-            
+         
+
 
             //Extension method
             Monkey monkey = new Monkey("monkey", 12, "Animal");
