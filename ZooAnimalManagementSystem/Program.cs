@@ -9,13 +9,16 @@ using System.Threading.Channels;
 using System.Xml.Linq;
 using ZooAnimalManagementSystem;
 using static System.Runtime.InteropServices.JavaScript.JSType;
+using System.Text.Json.Serialization;
+using System.Text.Json;
+using System.Xml;
 
 namespace MyApplication
 {
 
     class Program
     {
-        static void Main(string[] args)
+        static async Task Main(string[] args)
         {
             var myLion = new List<Lion>() {
             new Lion(name:"Lion",age:10,species:"Animal"),
@@ -24,6 +27,7 @@ namespace MyApplication
             };
 
 
+            
             //age greater than
             Console.WriteLine("\nAge < 12");
             var kq = myLion.Where(l => l.Age < 12).ToList();
@@ -42,7 +46,7 @@ namespace MyApplication
             }
 
 
-            ////Event Handling
+
             Zoo myZoo = new Zoo();
             myZoo.OnAnimalAdded += (sender, animal) =>
                 Console.WriteLine($"New Animal : {animal.Name}, Age: {animal.Age}, Species: {animal.Species}");
@@ -50,22 +54,17 @@ namespace MyApplication
             myZoo.AddAnimal(new Elephant("Elephant", 13, "Animal"));
             myZoo.AddAnimal(new Monkey("Monkey", 14, "Animal"));
 
+            //Save to file
+            myZoo.SaveAnimalData(@"D:\animal.json");
+
+            //Extension method
             Monkey monkey = new Monkey("monkey", 12, "Animal");
             Console.WriteLine("AnimalType: " + monkey.GetAnimalType());
-           
+
+
+
         }
-      
 
-
-
-        // Event handler 
-        //private static void Animal_Changed(object sender, ChangedEventAnimal e)
-        //{
-        //    Console.WriteLine($"The name of {e.Name} changed to {e.Name:C}");
-        //    Console.WriteLine($"The age of {e.Age} changed to {e.Age:C}");
-        //    Console.WriteLine($"The species of {e.Species} changed to {e.Species:C}");
-
-        //}
     }
   
 
