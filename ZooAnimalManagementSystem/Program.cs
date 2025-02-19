@@ -1,12 +1,14 @@
 ﻿using System;
 using System.Drawing;
 using System.Linq;
+using System.Reflection;
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Channels;
 using System.Xml.Linq;
 using ZooAnimalManagementSystem;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace MyApplication
 {
@@ -27,7 +29,7 @@ namespace MyApplication
             var kq = myLion.Where(l => l.Age < 12).ToList();
             foreach (var i in kq)
             {
-                GetAnimalType(i);
+                i.showInfo();
             }
 
             //species type
@@ -36,11 +38,11 @@ namespace MyApplication
 
             foreach (var i in typeSpecies)
             {
-                GetAnimalType(i);
+                i.showInfo();
             }
 
 
-            //Event Handling
+            ////Event Handling
             Zoo myZoo = new Zoo();
             myZoo.OnAnimalAdded += (sender, animal) =>
                 Console.WriteLine($"New Animal : {animal.Name}, Age: {animal.Age}, Species: {animal.Species}");
@@ -48,15 +50,12 @@ namespace MyApplication
             myZoo.AddAnimal(new Elephant("Elephant", 13, "Animal"));
             myZoo.AddAnimal(new Monkey("Monkey", 14, "Animal"));
 
+            Monkey monkey = new Monkey("monkey", 12, "Animal");
+            Console.WriteLine("AnimalType: " + monkey.GetAnimalType());
+           
         }
+      
 
-       
-
-        //Extension Methods
-        public static void GetAnimalType(Animal animal)
-        {
-            Console.WriteLine($"ShowInfo: Name: {animal.Name} \nAge: {animal.Age} \nSpecies: {animal.Species}\n");
-        }
 
 
         // Event handler 
@@ -68,4 +67,6 @@ namespace MyApplication
 
         //}
     }
+  
+
 }

@@ -17,7 +17,7 @@ namespace ZooAnimalManagementSystem
             OnAnimalAdded?.Invoke(this, animal);
         }
         public List<Animal> GetAnimals() => animals;
-
+       
     }
 
 }

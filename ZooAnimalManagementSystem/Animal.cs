@@ -28,4 +28,13 @@ namespace ZooAnimalManagementSystem
 
 
     }
+    static class AnimalType
+    {
+        //Extension Methods
+        public static string GetAnimalType(this Animal animal)
+        {
+            return animal.GetType().Name;
+        }
+
+    }
 }
