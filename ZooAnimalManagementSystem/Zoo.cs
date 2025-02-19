@@ -23,8 +23,8 @@ namespace ZooAnimalManagementSystem
         public async void SaveAnimalData(string nameFile)
         {
             Console.WriteLine("Loading data from a file.");
-            await using FileStream createStream = File.Create(nameFile);
-            await JsonSerializer.SerializeAsync(createStream, animals);
+            string json = JsonSerializer.Serialize(animals, new JsonSerializerOptions { WriteIndented = true });
+            await File.WriteAllTextAsync(nameFile, json);
         }
         
     }
